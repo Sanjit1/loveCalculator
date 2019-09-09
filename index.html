@@ -4,7 +4,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/png" href="pics/Sanjit.png" />
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/index.css">
   <title>Sanjit Sarda</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -54,18 +54,16 @@
       </ul>
     </nav>
   </header>
-  <div class="mainBody">
-    <h1 class="title">Love Calculator</h1>
-  </div>
-  Body
 
-
-
-
-
-
-
-
+  <center>
+    <div class="mainBody">
+      <h1 class="title">Love Calculator</h1>
+      <h4>Your Name: <input id="person1" name="person1"></h4>
+      <h4>Your Crushes Name: <input id="crush" name="crush"></h4>
+      <button id = "calc"><h4>Calculate</h4></button>
+      <p id = "p">0%</p>
+    </div>
+  </center>
   <div class="socialMedia">
     <ul>
       <li><a href="https://www.github.com/Sanjit1"><img class="media" src="pics/Github.png" alt="Github" width="40"
@@ -78,33 +76,38 @@
   </div>
 
 
-<!-- FireBase😈😈-->
+  <!-- FireBase😈😈-->
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
+  <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#config-web-app -->
 
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyAxJl60oCSAfKFnEQVE7wdAApyYrjxD9j0",
-    authDomain: "love-calculator-8603c.firebaseapp.com",
-    databaseURL: "https://love-calculator-8603c.firebaseio.com",
-    projectId: "love-calculator-8603c",
-    storageBucket: "",
-    messagingSenderId: "891684898291",
-    appId: "1:891684898291:web:ada5c051ff83b261c2be86"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
+     <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
 
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAxJl60oCSAfKFnEQVE7wdAApyYrjxD9j0",
+      authDomain: "love-calculator-8603c.firebaseapp.com",
+      databaseURL: "https://love-calculator-8603c.firebaseio.com",
+      projectId: "love-calculator-8603c",
+      storageBucket: "",
+      messagingSenderId: "891684898291",
+      appId: "1:891684898291:web:ada5c051ff83b261c2be86"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
 
+<script src="cookies.js"></script>
 
+<script src="calculator.js"></script>
 
 
 
 </body>
+
 </html>
