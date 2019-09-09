@@ -15,7 +15,7 @@ calculate.onclick = async function () {
     }
 
     firebase.database().ref('users/'+ accessCookie("name")).push({
-        chance: chance,
+        chance: chance-1,
         crush: person2.value,
         name: person1.value
     });
