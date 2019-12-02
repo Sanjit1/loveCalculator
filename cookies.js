@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 function accessCookie(cookieName) {
     var name = cookieName + "=";
     var allCookieArray = document.cookie.split(';');
