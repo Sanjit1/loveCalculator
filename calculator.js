@@ -9,7 +9,7 @@ var database = firebase.database();
 
 calculate.onclick = async function () {
     var chance = Math.floor(Math.random() * (+100 - +0)) + +0;
-    if (person1.value=="Thuan Do" &&Math.floor(Math.random() * (+100 - +0)) + +0!=3){chance=69;}
+    if (person1.value=="Thuan Do" &&Math.floor(Math.random() * (+100 - +0)) + +0!=3){chance=70;}
     for (var i = 0; i < chance; i++) {
         let delayres = await delay(40);
         document.getElementById("p").innerHTML = i + "%";
